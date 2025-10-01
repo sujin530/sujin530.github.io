@@ -273,9 +273,11 @@ section {
 }
 
 .experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .experience-card {
@@ -337,9 +339,11 @@ section {
 
 /* Projects Section */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -496,11 +500,11 @@ section {
     }
 
     .experience-grid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .contact-info {
